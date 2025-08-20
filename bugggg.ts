@@ -1,0 +1,1 @@
+// bug-sample.ts// Example TypeScript file with a bugfunction divide(a: number, b: number): number {    return a / b; // BUG: no check for b === 0}const result = divide(10, 0); // division by zeroconsole.log("Result:", result);// BUG: null dereferencelet maybeNull: string | null = null;console.log("Length:", maybeNull!.length); // force null access
